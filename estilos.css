@@ -1,0 +1,512 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Sumana:wght@700&display=swap");
+*,*::after,*::before{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  grid-template-columns: repeat(4,1fr);
+}
+button{
+  width: 100px;
+  height: 40px;
+  font-weight: bolder;
+}
+div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn-1{
+  border:1px solid black;
+  background:none;
+  position: relative;
+  transition: 2s color ease;
+}
+.btn-1::after{
+  content:" ";
+  display: block;
+  position: absolute;
+  width:100px;
+  height: 40px;
+  background-color: black;
+  top:-1px;
+  left: -1px;
+  z-index: -1;
+  transition: 1s clip-path ease;
+  clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+}
+.btn-1:hover{
+  color: white;
+}
+.btn-1:hover::after{
+  clip-path: polygon(100% 0, 0 0, 0 100%, 100% 99%);
+}
+.btn-2{
+  border:1px solid black;
+  background:none;
+  position: relative;
+  transition: 2s color ease;
+}
+.btn-2::after{
+  content:" ";
+  display: block;
+  position: absolute;
+  width:100px;
+  height: 40px;
+  background-color: black;
+  top:-1px;
+  left: -1px;
+  z-index: -1;
+  transition: 1s clip-path ease;
+  clip-path:polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+}
+.btn-2:hover{
+  color: white;
+}
+.btn-2:hover::after{
+  clip-path: polygon(100% 0, 0 0, 0 100%, 100% 99%);
+}
+.btn-3{
+  border:1px solid black;
+  background:none;
+  position: relative;
+  transition: 2s color ease;
+}
+.btn-3::after{
+  content:" ";
+  display: block;
+  position: absolute;
+  width:100px;
+  height: 40px;
+  background-color: black;
+  top:-1px;
+  left: -1px;
+  z-index: -1;
+  transition: 1s clip-path ease;
+  clip-path: polygon(100% 0, 0 0, 0 0, 100% 0);
+}
+.btn-3:hover{
+  color: white;
+}
+.btn-3:hover::after{
+  clip-path: polygon(100% 0, 0 0, 0 100%, 100% 99%);
+}
+.btn-4{
+  border:1px solid black;
+  background:none;
+  position: relative;
+  transition: 2s color ease;
+}
+.btn-4::after{
+  content:" ";
+  display: block;
+  position: absolute;
+  width:100px;
+  height: 40px;
+  background-color: black;
+  top:-1px;
+  left: -1px;
+  z-index: -1;
+  transition: 1s clip-path ease;
+  clip-path:  polygon(100% 100%, 0 100%, 0 100%, 100% 100%);
+}
+.btn-4:hover{
+  color: white;
+}
+.btn-4:hover::after{
+  clip-path: polygon(100% 0, 0 0, 0 100%, 100% 99%);
+}
+.btn-5{
+  background:none;
+  color:crimson;
+  border:none;
+  position: relative;
+}
+.btn-5::before{
+  content:" ";
+  display: block;
+  position: absolute;
+  width:100px;
+  height: 2px;
+  background-color: crimson;
+  bottom:-1px;
+  left: -1px;
+  clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+  transition: .5s clip-path ease;
+}
+.btn-5:hover::before{
+  clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
+}
+.btn-6{
+  background:none;
+  color:crimson;
+  border:none;
+  position: relative;
+}
+.btn-6::before{
+  content:" ";
+  display: block;
+  position: absolute;
+  width:100px;
+  height: 2px;
+  background-color: crimson;
+  bottom:-1px;
+  left: -1px;
+  clip-path: polygon(50% 0, 50% 0, 50% 100%, 50% 100%);;
+  transition: .5s clip-path ease;
+}
+.btn-6:hover::before{
+  clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
+}
+.btn-7{
+  background:none;
+  color:crimson;
+  border:none;
+  position: relative;
+}
+.btn-7::before{
+  content:" ";
+  display: block;
+  position: absolute;
+  width:100px;
+  height: 2px;
+  background-color: crimson;
+  bottom:-1px;
+  left: -1px;
+  clip-path: polygon(100% 0, 100% 0%, 100% 100%, 100% 100%);
+  transition: .5s clip-path ease;
+}
+.btn-7:hover::before{
+  clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
+}
+.btn-8{
+  background:none;
+  color:crimson;
+  border:none;
+  position: relative;
+}
+.btn-8::before{
+  content:" ";
+  display: block;
+  position: absolute;
+  width:100px;
+  height: 2px;
+  background-color: crimson;
+  bottom:-1px;
+  left: -1px;
+  clip-path: polygon(0 0, 0% 100%, 0 100%, 0 0, 100% 0, 100% 100%, 100% 100%, 100% 0);
+  transition: .5s clip-path ease;
+}
+.btn-8:hover::before{
+  clip-path: polygon(0 0, 0% 100%, 50% 100%, 50% 0, 100% 0, 100% 100%, 50% 100%, 50% 0);
+}
+.btn-9{
+  background: none;
+  border:none;
+  color: lightseagreen;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn-9::after{
+  content:" ";
+  position: absolute;
+  display: block;
+  background-color: lightseagreen;
+  width: 100%;
+  height: 2px;
+  bottom: -1px;
+  clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+  transition: 1s clip-path ease ;
+}
+.btn-9::before{
+  content:" ";
+  position: absolute;
+  display: block;
+  background-color: lightseagreen;
+  width: 100%;
+  height: 2px;
+  top: -1px;
+  clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+  transition: 1s clip-path ease ;
+}
+.span{
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn-9 .span::before{
+  content:" ";
+  position: absolute;
+  display: block;
+  background-color: lightseagreen;
+  width: 2px;
+  height: 42px;
+  left:-1px;
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  transition: 1s clip-path ease ;
+}
+.btn-9 .span::after{
+  content:" ";
+  position: absolute;
+  display: block;
+  background-color: lightseagreen;
+  width: 2px;
+  height: 42px;
+  right:-1px;clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
+  transition: 1s clip-path ease ;
+}
+.btn-9:hover::after,.btn-9:hover::before,.btn-9:hover .span::after,.btn-9:hover .span::before{
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+.btn-10{
+  background: none;
+  border:none;
+  color: lightseagreen;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn-10::after{
+  content:" ";
+  position: absolute;
+  display: block;
+  background-color: lightseagreen;
+  width: 100%;
+  height: 2px;
+  bottom: -1px;
+  clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+  transition: 1s clip-path ease 1s;
+}
+.btn-10::before{
+  content:" ";
+  position: absolute;
+  display: block;
+  background-color: lightseagreen;
+  width: 100%;
+  height: 2px;
+  top: -1px;
+  clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+  transition: 1s clip-path ease 3s;
+}
+.span{
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn-10 .span::before{
+  content:" ";
+  position: absolute;
+  display: block;
+  background-color: lightseagreen;
+  width: 2px;
+  height: 42px;
+  left:-1px;
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  transition: 1s clip-path ease ;
+}
+.btn-10 .span::after{
+  content:" ";
+  position: absolute;
+  display: block;
+  background-color: lightseagreen;
+  width: 2px;
+  height: 42px;
+  right:-1px;clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
+  transition: 1s clip-path ease 2s;
+}
+.btn-10:hover::after,.btn-10:hover::before,.btn-10:hover .span::after,.btn-10:hover .span::before{
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+.btn-11{
+  background: none;
+  border:none;
+  color: lightseagreen;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn-11::after{
+  content:" ";
+  position: absolute;
+  display: block;
+  background-color: lightseagreen;
+  width: 100%;
+  height: 2px;
+  bottom: -1px;
+  clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+  transition: 1s clip-path ease ;
+}
+.btn-11::before{
+  content:" ";
+  position: absolute;
+  display: block;
+  background-color: lightseagreen;
+  width: 100%;
+  height: 2px;
+  top: -1px;
+  clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+  transition: 1s clip-path ease ;
+}
+.span{
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn-11 .span::before{
+  content:" ";
+  position: absolute;
+  display: block;
+  background-color: lightseagreen;
+  width: 2px;
+  height: 42px;
+  left:-1px;
+  clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
+  transition: 1s clip-path ease 1s;
+}
+.btn-11 .span::after{
+  content:" ";
+  position: absolute;
+  display: block;
+  background-color: lightseagreen;
+  width: 2px;
+  height: 42px;
+  right:-1px;
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  transition: 1s clip-path ease 1s;
+}
+.btn-11:hover::after,.btn-11:hover::before,.btn-11:hover .span::after,.btn-11:hover .span::before{
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+.btn-12{
+  background-color: lightseagreen;
+  border:none;
+  color:white;
+  transition: 1s box-shadow ease;
+}
+.btn-12:hover{
+  box-shadow: inset 0px 0px 10px 3px rgba(0,0,0,0.57)
+  ;
+}
+.div-16{
+  background-color: black;
+}
+.btn-16{
+  border:1px solid lightseagreen;
+  transition: 1.5s all ease;
+  color: white;
+  background:none;
+}
+.btn-13{
+  color:white;
+  background-color: lightseagreen;
+  border:none;
+  transition: 1s all ease;
+}
+.btn-13:hover{
+  transform: scale(1.2);
+  box-shadow: 5px 5px 0px 0px #289FED, 
+  10px 10px 0px 0px #5FB8FF, 
+  15px 15px 0px 0px #A1D8FF, 
+  20px 20px 0px 0px #CAE6FF, 
+  25px 25px 0px 0px #E1EEFF, 
+  5px 5px 15px 5px rgba(38,150,255,0);
+}
+.btn-14{
+  color: black;
+  background-color: orange;
+  border:2px solid black;
+  position: relative;
+}
+.btn-14::after{
+  content:"";
+  position: absolute;
+  display: block;
+  width: 130.6%;
+  height: 10px;
+  bottom:-11.5px;
+  left: -2.8px;
+  clip-path: polygon(0 0, 79% 0, 100% 100%, 18% 100%);
+  background-color:black;
+  z-index: -1;
+  transition: .6s clip-path ease;
+}
+.btn-14::before{
+  content:"";
+  position: absolute;
+  display: block;
+  width: 24px;
+  height: 138%;
+  top: -2.2px;
+  right: -24.7px;
+  clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 81%);
+  background-color:black;
+  z-index: -1;
+  transition: .6s clip-path ease;
+}
+.btn-14:hover::before{
+  clip-path: polygon(0 0, 0 0, 0 80%, 0 80%);
+}
+.btn-14:hover::after{
+  clip-path: polygon(0 0, 79.8% 0, 79% 0, 0 0);
+}
+.btn-15{
+  background: none;
+  border:none;
+  position:relative;
+  color: white;
+}
+.btn-15::before{
+  content:"";
+  position:absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: #006664;
+  top: 0px;
+  left: 0px;
+  z-index: -2;
+}
+.btn-15::after{
+  content:"";
+  position:absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: #004D4B;
+  top: 0px;
+  left: 0px;
+  clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
+  transition: 1s clip-path ease;
+  z-index: -1;
+}
+.btn-15:hover::after{
+  clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+}
+.btn-16:hover{
+  background-color: lightseagreen;
+  box-shadow: 2px 2px 39px 10px rgba(56,212,255,0.1),
+  2px 2px 39px 20px rgba(56,212,255,0.1),
+  2px 2px 39px 30px rgba(56,212,255,0.1),
+  2px 2px 39px 40px rgba(56,212,255,0.01)
+  ;
+}
